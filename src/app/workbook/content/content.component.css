@@ -1,0 +1,54 @@
+.fm-details-shadow {
+  /* box-shadow: -2px 0 1px 0px rgba(0, 0, 0, 0.01); */
+  min-height: 100vh;
+  position: relative;
+  margin-bottom: 80px;
+  background-size: auto 105vh;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.fm-details-container {
+  min-height: inherit;
+}
+
+.fm-details-content {
+  backdrop-filter: blur(10px);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95));
+}
+
+.fm-details-content-letterhead:hover {
+  cursor: pointer;
+}
+
+.fm-details-narrow {
+  background-size: auto 100vh;
+  background-position-x: center;
+  box-shadow: -24px 0px 24px 0px rgba(0, 0, 0, 0.3);
+  border-left: 4px solid var(--primary-colour);
+}
+
+.fm-details {
+  min-height: 100vh;
+  padding: var(--spacing-default);
+  opacity: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.59));
+  animation: transitionIn 200ms ease-in 50ms 1 forwards;
+}
+
+.fm-body {
+  margin-top: var(--spacing-default);
+}
+
+p.fm-body-text {
+  margin-bottom: var(--spacing-default);
+}
+
+@media only screen and (min-width: 768px) {
+  .fm-details {
+    padding: var(--spacing-default);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}

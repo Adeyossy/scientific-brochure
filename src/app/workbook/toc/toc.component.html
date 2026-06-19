@@ -1,1 +1,19 @@
-<p>toc works!</p>
+<div class="fm-toc">
+  <div class="container-fluid p-0 fm-toc-header">
+    <div class="row g-0 align-items-center">
+      <div class="col-9">
+        <p class="fm-header px-3">Table of Content</p>
+      </div>
+      <div class="col-3" *ngIf="user$ | async as user">
+        <button class="fm-button" (click)="logout(user)">{{ user ? 'Logout' : '' }}</button>
+      </div>
+    </div>
+  </div>
+  <div class="fm-toc-items">
+    <div class="fm-toc-item" *ngFor="let tocItem of toc, index as i">
+      <app-toc-item [isOpen]="itemsOpenState[i]" [isSelected]="navIndex === i"
+       [tocItem]="tocItem" [tocItemIndex]="i" [tocLink]="tocLinks[i]"
+       (propagateStateChange)="changeState($event)" [navIndex]="navIndex"></app-toc-item>
+    </div>
+  </div>
+</div>

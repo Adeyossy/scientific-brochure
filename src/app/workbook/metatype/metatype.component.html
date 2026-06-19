@@ -1,1 +1,191 @@
-<p>metatype works!</p>
+<div class="fm-metatype fm-paragraph-container" *ngIf="item.metatype === 'paragraph'">
+  <p *ngFor="let text of itemAsStrings()" class="fm-body-text">
+    <app-metatext [paragraph]="text"></app-metatext>
+  </p>
+</div>
+<div class="fm-metatype fm-paragraph-container" *ngIf="item.metatype === 'textarea'">
+  <!-- <p *ngFor="let text of itemAsStrings()" class="fm-body-text">
+    <app-metatext [paragraph]="text"></app-metatext>
+  </p> -->
+  <ng-container *ngIf="response$ | async as response">
+    <textarea [name]="response.inputId" [id]="response.inputId" [ngModel]="response.answer" 
+    (ngModelChange)="response.answer= onTextChange($event)" class="w-100" rows="10"
+    (blur)="saveInput(response)"></textarea>
+    <button *ngIf="saving$ === null; else saving" class="small w-auto" 
+    (click)="saveInput(response)">Save</button>
+    <ng-template #saving>
+      <div *ngIf="saving$ | async as saved; else loading">
+        <button class="icon w-auto small">
+          Saved <i class="bi bi-check-circle-fill text-success"></i>
+        </button>
+      </div>
+      <ng-template #loading>
+        <button class="icon small w-auto">
+          Saving <i class="bi bi-gear-fill"></i>
+        </button>
+      </ng-template>
+    </ng-template>
+  </ng-container>
+</div>
+<div class="fm-metatype fm-paragraph-container" *ngIf="item.metatype === 'author' || item.metatype === 'date'">
+  <p *ngFor="let text of itemAsStrings()" class="fm-body-text">
+    {{ text }}
+  </p>
+</div>
+<div class="fm-metatype fm-subheading-container" *ngIf="item.metatype === 'subheading'">
+  <h2 class="heading-small fw-bold" *ngFor="let subheading of itemAsStrings()" id="{{getSubheadingId(subheading)}}">
+    {{subheading}}
+  </h2>
+</div>
+<div class="fm-metatype fm-h3-container" *ngIf="item.metatype === 'h3' || item.metatype === 'title'">
+  <p class="subheading fw-bold" *ngFor="let h3 of itemAsStrings()">{{h3}}</p>
+</div>
+<div class="fm-metatype fm-h3-container" *ngIf="item.metatype === 'h4'">
+  <p class="subheading fw-bold" *ngFor="let h4 of itemAsStrings()">{{h4}}</p>
+</div>
+<div class="fm-metatype fm-leading-container" *ngIf="item.metatype === 'leading'">
+  <p class="fm-list-leading" *ngFor="let leading of itemAsStrings()">
+    <app-metatext [paragraph]="leading"></app-metatext>
+  </p>
+</div>
+<div class="fm-metatype fm-image-container" *ngIf="item.metatype === 'image'"
+  [ngStyle]='{ "background": "url({{ `../..${imageItemAsStrings(0)[0]}` }})" }'>
+  <!-- {{imageItemAsStrings(0)[0]}} -->
+  <div class="container-fluid p-0">
+    <div class="row justify-content-center">
+      <div *ngFor="let img of imageItemAsStrings(0), index as i" class="col-lg-6 mb-3 fm-image-bg">
+        <div class="text-center fm-image-group">
+          <img [src]="img"
+            alt="{{imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0]}}">
+          <div class="fm-caption-container">
+            <p class="fm-caption">{{ imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0] }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fm-metatype fm-image-container" *ngIf="item.metatype === 'appendices'"
+  [ngStyle]='{ "background": "url({{ `../..${imageItemAsStrings(0)[0]}` }})" }'>
+  <!-- {{imageItemAsStrings(0)[0]}} -->
+  <div class="container-fluid p-0">
+    <div class="row justify-content-center">
+      <div *ngFor="let appendix of itemAsMetatype(), index as i" class="col-md-6 col-lg-4 mb-3 fm-image-bg">
+        <div class="text-center fm-image-group" *ngFor="let img of appendixImageAsStrings(appendix, 0)">
+          <div class="fm-image-item">
+            <img src="../..{{img}}"
+              alt="{{appendixImageAsStrings(appendix, 1)[i] ? appendixImageAsStrings(appendix, 1)[i] : appendixImageAsStrings(appendix, 1)[0]}}">
+          </div>
+          <div class="fm-caption-container">
+            <a href="../..{{appendixImageAsStrings(appendix, 2)}}" target="_blank">
+              <p class="fm-caption">{{ appendixImageAsStrings(appendix, 1)[i] ? appendixImageAsStrings(appendix, 1)[i] :
+                appendixImageAsStrings(appendix, 1)[0] }}
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid p-0 fm-metatype fm-banner" *ngIf="item.metatype === 'banner'">
+  <div class="row">
+    <div class="offset-lg-1 col-lg-10">
+      <div class="text-center fm-image-group">
+        <img [src]="itemAsSectionItems()[0].content[0]" alt="{{itemAsSectionItems()[1].content[0]}}">
+        <div class="fm-caption-container">
+          <p class="fm-caption">{{ itemAsSectionItems()[1].content[0] }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid p-0 fm-metatype fm-banner" *ngIf="item.metatype === 'quote'">
+  <div class="row">
+    <div class="offset-lg-1 col-lg-10">
+      <div class="text-center fm-image-group">
+        <p class="subheading p-3">
+          {{itemAsSectionItems()[0].content[0]}}
+        </p>
+        <div class="fm-caption-container">
+          <p class="fm-caption">- {{ itemAsSectionItems()[1].content[0] }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fm-metatype fm-paragraph-container" *ngIf="item.metatype === 'linked'">
+  <a [href]="itemAsSectionItems()[0].content[0]" target="_blank">
+    <button class="small w-auto">Download {{ itemAsSectionItems()[1].content[0] }}</button>
+  </a>
+</div>
+<ul class="fm-metatype fm-list-items-container" *ngIf="item.metatype === 'ul'">
+  <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()"><app-metatext [paragraph]="listItem"></app-metatext>
+  </li>
+</ul>
+<ol class="fm-metatype fm-list-items-container" *ngIf="item.metatype === 'ol'">
+  <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()"><app-metatext [paragraph]="listItem"></app-metatext>
+  </li>
+</ol>
+<div class="fm-metatype fm-list-container" *ngIf="item.metatype === 'list'">
+  <app-metatype *ngFor="let itemContent of itemAsSectionItems()" [item]="itemContent"></app-metatype>
+</div>
+<div class="fm-metatype fm-metatype-project d-flex flex-column"
+  *ngIf="item.metatype === 'project' || item.metatype === 'group'">
+  <div *ngFor="let itemContent of itemAsSectionItems(), index as i" [ngClass]="i == 0 ? 'fm-fill-space' : ''">
+    <div class="fm-heading-divider" *ngIf="i == 1"></div>
+    <app-metatype [item]="itemContent"></app-metatype>
+  </div>
+</div>
+<div class="fm-metatype fm-section-container container-fluid p-0"
+  *ngIf="item.metatype === 'projects' || item.metatype === 'groups'">
+  <!-- <hr /> -->
+  <div class="row">
+    <div class="col-md-6 col-xl-4 fm-projects-container" *ngFor="let sectionItem of itemAsSectionItems()">
+      <app-metatype [item]="sectionItem"></app-metatype>
+    </div>
+  </div>
+  <!-- <hr /> -->
+</div>
+<div class="fm-metatype fm-section-container" *ngIf="item.metatype === 'section'">
+  <!-- <hr /> -->
+  <app-metatype *ngFor="let sectionItem of itemAsSectionItems()" [item]="sectionItem"
+  [workshopId]="workshopId" [chapter]="chapter" [index]="index" [offset]="offset"></app-metatype>
+  <p class="subheading color-accent w-100 text-center">{{ offset + index }}</p>
+  <hr />
+</div>
+<div class="fm-metatype fm-table-container mb-5" *ngIf="item.metatype === 'table'">
+  <!-- <hr /> -->
+  <table class="table table-striped table-bordered" *ngIf="itemAsTable() as item">
+    <thead *ngIf="item.content[0].metatype === 'th'">
+      <tr>
+        <th *ngFor="let h of item.content[0].content" scope="col">{{ h }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tr of item.content[1].content as row; index as i; first as f">
+        <!-- <th *ngIf="f" scope="row">{{ row }}</th> -->
+        <td *ngFor="let r of tr.content">{{ r }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="fm-metatype fm-avatar-container" *ngIf="item.metatype === 'avatar'">
+  <img src="../..{{item.content[0]}}" alt="{{item.content[1]}}" class="img-fluid">
+  <div class="fm-metatype fm-avatar-details">
+    <h3 class="fm-header fm-avatar-header">{{item.content[1]}}</h3>
+    <div class="fm-heading-divider"></div>
+    <a href="tel:+234{{item.content[2]}}" class="fm-avatar-details-phonenumber d-block">{{item.content[2]}}</a>
+    <a href="mailto:{{item.content[3]}}" class="fm-avatar-details-email d-block">{{item.content[3]}}</a>
+  </div>
+</div>
+<div class="fm-metatype fm-avatars-container" *ngIf="item.metatype === 'avatars'">
+  <div class="container-fluid p-0">
+    <div class="row">
+      <div class="col-md-6 col-lg-6 col-xl-4 fm-avatar-col" *ngFor="let avatar of itemAsSectionItems()">
+        <app-metatype [item]="avatar"></app-metatype>
+      </div>
+    </div>
+  </div>
+</div>

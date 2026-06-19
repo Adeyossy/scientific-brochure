@@ -10,6 +10,7 @@ import { MetatextComponent } from './workbook/metatext/metatext.component';
 import { MetatypeComponent } from './workbook/metatype/metatype.component';
 import { TocComponent } from './workbook/toc/toc.component';
 import { TocItemComponent } from './workbook/toc-item/toc-item.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TocItemComponent } from './workbook/toc-item/toc-item.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

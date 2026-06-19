@@ -1,0 +1,131 @@
+p.fm-body-text, ol, ul {
+  margin-bottom: var(--spacing-default);
+  opacity: 0.9;
+}
+
+.fm-paragraph-container {
+  padding-bottom: var(--spacing-default);
+}
+
+.fm-table-container {
+  overflow-x: scroll;
+}
+
+hr {
+  margin: var(--spacing-large) 0px;
+  color: var(--primary-colour);
+}
+
+li {
+  margin: 8px;
+}
+
+tr {
+  white-space: pre;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.fm-image-container {
+  margin: var(--spacing-large) 0px;
+  background-size: cover;
+}
+
+.fm-image-bg {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.fm-image-group {
+  /* width: 60%; */
+  height: 100%;
+  border: 2px solid var(--primary-colour);
+  background-color: var(--primary-colour-light);
+}
+
+.fm-banner {
+  margin: var(--spacing-large) 0;
+}
+
+.fm-image-item {
+  height: 30vh;
+  overflow: hidden;
+}
+
+.fm-caption {
+  padding: var(--spacing-default);
+  text-align: left;
+  font-size: 13px;
+}
+
+.fm-subheading-container > .fm-header {
+  margin-top: var(--spacing-large);
+}
+
+.fm-metatype-project {
+  height: 100%;
+  padding: var(--spacing-default);
+  background-color: var(--primary-colour-light);
+  border: 1px solid var(--primary-colour);
+}
+
+.fm-projects-container {
+  margin: var(--spacing-default) 0px;
+}
+
+.fm-metatype-project div.fm-metatype {
+  padding: 4px 0;
+  margin: 4px 0;
+}
+
+.fm-fill-space {
+  flex-basis: 75%;
+}
+
+.fm-metatype-project p {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  /* font-weight: 700; */
+}
+
+.fm-metatype-project h3 {
+  color: var(--primary-colour-contrast);
+}
+
+.fm-metatype-project .fm-heading-divider {
+  background-color: var(--accent-colour-orange);
+  height: 2px;
+  padding: 0;
+  margin: 0;
+}
+
+.fm-heading-divider {
+  background-color: var(--accent-colour-orange);
+}
+
+.fm-avatar-container {
+  height: 100%;
+  background-color: var(--primary-colour-light);
+  border: 2px solid var(--primary-colour);
+}
+
+.fm-avatar-col {
+  margin: var(--spacing-default) 0;
+}
+
+.fm-avatar-details {
+  padding: var(--spacing-default)
+}
+
+.fm-avatar-header {
+  font-size: 21px;
+}
+
+a {
+  word-wrap: break-word;
+}

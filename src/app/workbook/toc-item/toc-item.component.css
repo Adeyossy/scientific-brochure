@@ -1,0 +1,79 @@
+p {
+  margin: 0;
+  font-family: 'Utopia-Std', Georgia, 'Times New Roman', Times, serif;
+}
+
+details {
+  background-color: var(--background-colour-lighter);
+  border: 1px solid transparent;
+}
+
+details > * {
+  border: 1px solid transparent;
+}
+
+details[open] {
+  background-color: var(--background-colour-lighter);
+  transition: background-color 200ms ease-in;
+}
+
+details[open], details[open] > * {
+  border: 1px solid var(--accent-color);
+  transition: border 500ms linear, height 200ms linear;
+}
+
+details:hover {
+  background-color: var(--primary-colour-light);
+  border: 1px solid var(--primary-colour-contrast);
+}
+
+summary.active {
+  background-color: var(--primary-colour-contrast);
+  color: white;
+  border-color: var(--accent-color);
+}
+
+summary {
+  min-height: 64px;
+  border: 1px solid transparent;
+}
+
+summary > .container-fluid, summary .row {
+  min-height: inherit;
+}
+
+summary, li {
+  list-style: none;
+  /* height: 48px;
+  line-height: 48px; */
+  vertical-align: middle;
+}
+
+p {
+  padding: 27px 0px;
+  font-size: 12.5px;
+  color: inherit;
+}
+
+i {
+  font-size: 16px;
+}
+
+summary.active .fm-toc-item-number {
+  border-color: var(--primary-colour-light);
+  background-color: var(--accent-colour-orange);
+}
+
+.fm-toc-item-number {
+  border: 1px solid var(--primary-colour-contrast);
+  padding: 2px 8px;
+  font-family: 'Jost', sans-serif;
+}
+
+.fm-animate-dropdown::before {
+  animation: dropdown 200ms linear forwards;
+}
+
+.fm-animate-dropdown-reverse::before {
+  animation: dropdownReverse 200ms linear forwards;
+}

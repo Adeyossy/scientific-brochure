@@ -1,1 +1,5 @@
-<p>metatext works!</p>
+<span class="fm-metatext" *ngFor="let split of splits, index as i">
+  <a href="{{links[i-1].content[0]}}" class="fm-metatext-link" target="_blank"
+   *ngIf="i > 0">{{ links[i - 1].content[0] }}</a>
+  <span class="fm-metatext-text">{{ split.content[0] }}</span>
+</span>

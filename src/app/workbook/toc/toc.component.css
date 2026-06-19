@@ -1,0 +1,49 @@
+.fm-toc {
+  padding: 8px;
+  height: 75vh;
+  /* backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px); */
+  overflow-y: auto;
+}
+
+.fm-toc-header {
+  padding: var(--spacing-small);
+  padding-top: var(--spacing-default);
+}
+
+.fm-toc-items {
+  /* backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); */
+  font-size: 12.5px;
+}
+
+.fm-toc-item {
+  margin: 8px;
+}
+
+.fm-header {
+  font-size: 16px;
+}
+
+button.fm-button {
+  border: none;
+  padding: 2px;
+  color: var(--primary-colour-contrast);
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button.fm-button:hover {
+  color: var(--accent-colour-orange);
+}
+
+@media only screen and (min-width: 992px) {
+  .fm-toc {
+    height: 100vh;
+  }
+
+  .fm-header {
+    margin-bottom: 0px;
+  }
+}

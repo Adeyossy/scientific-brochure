@@ -1,1 +1,42 @@
-<p>workbook works!</p>
+<ng-container>
+  <div class="container-fluid p-0 fm-toc-container"
+    [ngClass]="showOnMobile ? 'd-block fm-show-toc' : 'd-none d-lg-block'">
+    <div class="row g-0 align-items-end">
+      <div class="col-lg-4 col-xl-3 fm-toc-group">
+        <app-toc [toc]="tableOfContent" [navIndex]="index" (propagateIndex)="setIndexOnClick($event)"
+          [itemsSelectionState]="itemsSelectionState" [itemsOpenState]="itemsOpenState"></app-toc>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid p-0 fm-details-container">
+    <div class="row g-0">
+      <div class="offset-lg-4 col-lg-8 offset-xl-3 col-xl-9 fm-details-group"
+        [ngStyle]="{'background-image': resident_image }">
+        <div class="fm-details-scrim" [ngClass]="animate ? 'animate' : ''"></div>
+        <router-outlet (activate)="setIndex($event)"></router-outlet>
+      </div>
+      <div class="col-12 d-lg-none p-5">
+        <h1 class="fm-project-header">DAE Workbook</h1>
+      </div>
+      <div class="fm-toc-fab d-lg-none d-flex justify-content-center align-items-center" (click)="showToc()"
+        [ngClass]="showOnMobile ? ' shown' : '' ">
+        <i class="bi " [ngClass]="showOnMobile ? 'bi-x-circle' : 'bi-journals' "></i>
+      </div>
+      <!-- <div class="col-lg-1"></div> -->
+    </div>
+  </div>
+  <div class="fm-details-nav" *ngIf="index >= 0">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <div class="col-3 col-md-2 col-lg-1">
+          <button class="w-100" [disabled]="index === 0" (click)="switchSection(index - 1)">
+            <i class="bi bi-arrow-left"></i></button>
+        </div>
+        <div class="offset-6 col-3 offset-md-8 col-md-2 offset-lg-10 col-lg-1">
+          <button class="w-100" [disabled]="index >= workbook.length - 1" (click)="switchSection(index + 1)"><i
+              class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
