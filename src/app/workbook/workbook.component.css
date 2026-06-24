@@ -36,8 +36,8 @@
   position: relative;
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 120% auto;
-  animation: drift 60s ease-in-out infinite alternate forwards;
+  background-size: contain;
+  /* animation: drift 60s ease-in-out infinite alternate forwards; */
 }
 
 .fm-details-group.animate {

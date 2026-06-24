@@ -1,0 +1,47 @@
+img.fm-splash-image {
+  /* animation: animateBlur 5s linear 500ms infinite alternate; */
+    filter: blur(3px) grayscale(0.5);
+    -webkit-filter: blur(3px) grayscale(0.5);
+    opacity: 0;
+}
+
+.fm-splash {
+  position: relative;
+  height: 100%;
+}
+
+.fm-splash-images-group {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fm-splash-hero {
+  position: absolute;
+  /* height: 50vmax; */
+  right: 0; top: 25%; bottom: 0; left: 0;
+  margin: auto;
+  width: 100%;
+}
+
+.fm-splash-icon {
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.2);
+  padding: var(--fm-small-padding);
+  border-radius: 50%;
+}
+
+h1.fm-header {
+  font-size: 18px;
+}
+
+@keyframes animateBlur {
+  from {
+    filter: blur(0px) grayscale(0);
+    -webkit-filter: blur(0px) grayscale(0);
+  }
+
+  to {
+    filter: blur(3px) grayscale(0.5);
+    -webkit-filter: blur(3px) grayscale(0.5);
+  }
+}

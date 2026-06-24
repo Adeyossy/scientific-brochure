@@ -1,11 +1,11 @@
 p.fm-body-text, ol, ul {
-  margin-bottom: var(--spacing-default);
+  margin-bottom: var(--spacing-small);
   opacity: 0.9;
 }
-
+/* 
 .fm-paragraph-container {
   padding-bottom: var(--spacing-default);
-}
+} */
 
 .fm-table-container {
   overflow-x: scroll;
@@ -60,6 +60,14 @@ img {
   padding: var(--spacing-default);
   text-align: left;
   font-size: 13px;
+}
+
+.fm-subheading-container {
+  padding: var(--spacing-default);
+  background-color: var(--background-colour-transparent);
+  border: 2px solid var(--accent-colour-orange);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-small);
 }
 
 .fm-subheading-container > .fm-header {
