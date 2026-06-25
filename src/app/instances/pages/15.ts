@@ -15,8 +15,18 @@ export const page15: Page = {
         {
           metatype: "caption",
           content: [
-            `Prof. Mamadou Mourtalla Ka
-            The President, West African College of Physicians.`
+            {
+              metatype: "h4",
+              content: [
+                "Prof. Mamadou Mourtalla Ka"
+              ]
+            },
+            {
+              metatype: "h3",
+              content: [
+                "The President, West African College of Physicians."
+              ]
+            }
           ]
         }
       ]
