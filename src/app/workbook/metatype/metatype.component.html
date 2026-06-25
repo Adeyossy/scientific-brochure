@@ -40,7 +40,7 @@
   </p>
 </div>
 <div class="fm-metatype fm-subheading-container" *ngIf="item.metatype === 'subheading'">
-  <h2 class="heading-medium text-center fw-bold" *ngFor="let subheading of itemAsStrings()" id="{{getSubheadingId(subheading)}}">
+  <h2 class="heading-small text-center fw-bold" *ngFor="let subheading of itemAsStrings()" id="{{getSubheadingId(subheading)}}">
     {{subheading}}
   </h2>
 </div>
@@ -103,7 +103,8 @@
         <img [src]="itemAsSectionItems()[0].content[0]"
         alt="{{itemAsSectionItems()[1].content[0]}}">
       </div>
-      <div class="fm-caption-container" *ngIf="itemAsSectionItems()[1].content as caption">
+      <div class="fm-caption-container" *ngIf="itemAsSectionItems()[1].content as caption"
+      [class.d-none]="caption.length === 0">
         <app-metatype *ngFor="let c of caption" [item]="c"></app-metatype>
       </div>
     </div>

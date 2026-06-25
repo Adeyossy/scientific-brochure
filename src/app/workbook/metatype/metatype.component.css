@@ -1,6 +1,5 @@
 .fm-section-container {
-  background: linear-gradient(var(--background-colour-transparent), var(--background-colour-transparent)), 
-  url('/assets/images/background.no.texture.jpg');
+  background: url('/assets/images/background.no.texture.jpg');
   /* background-blend-mode: soft-light; */
   background-size: cover;
   background-repeat: no-repeat;
