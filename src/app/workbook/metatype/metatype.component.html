@@ -1,3 +1,10 @@
+<div class="fm-metatype fm-section-container mb-3" *ngIf="item.metatype === 'section'">
+  <!-- <hr /> -->
+  <app-metatype *ngFor="let sectionItem of itemAsSectionItems()" [item]="sectionItem"
+  [workshopId]="workshopId" [chapter]="chapter" [index]="index" [offset]="offset"></app-metatype>
+  <p class="subheading color-accent w-100 text-center">{{ offset + index }}</p>
+  <!-- <hr /> -->
+</div>
 <div class="fm-metatype fm-paragraph-container" *ngIf="item.metatype === 'paragraph'">
   <p *ngFor="let text of itemAsStrings()" class="fm-body-text">
     <app-metatext [paragraph]="text"></app-metatext>
@@ -92,11 +99,12 @@
 <div class="container-fluid p-0 fm-metatype fm-banner" *ngIf="item.metatype === 'banner'">
   <div class="row">
     <div class="offset-lg-1 col-lg-10">
-      <div class="text-center fm-image-group">
-        <img [src]="itemAsSectionItems()[0].content[0]" alt="{{itemAsSectionItems()[1].content[0]}}">
-        <div class="fm-caption-container">
-          <p class="fm-caption">{{ itemAsSectionItems()[1].content[0] }}</p>
-        </div>
+      <div class="text-center fm-image-group mb-3">
+        <img [src]="itemAsSectionItems()[0].content[0]"
+        alt="{{itemAsSectionItems()[1].content[0]}}">
+      </div>
+      <div class="fm-caption-container" *ngIf="itemAsSectionItems()[1].content as caption">
+        <app-metatype *ngFor="let c of caption" [item]="c"></app-metatype>
       </div>
     </div>
   </div>
@@ -147,13 +155,6 @@
     </div>
   </div>
   <!-- <hr /> -->
-</div>
-<div class="fm-metatype fm-section-container" *ngIf="item.metatype === 'section'">
-  <!-- <hr /> -->
-  <app-metatype *ngFor="let sectionItem of itemAsSectionItems()" [item]="sectionItem"
-  [workshopId]="workshopId" [chapter]="chapter" [index]="index" [offset]="offset"></app-metatype>
-  <p class="subheading color-accent w-100 text-center">{{ offset + index }}</p>
-  <hr />
 </div>
 <div class="fm-metatype fm-table-container mb-5" *ngIf="item.metatype === 'table'">
   <!-- <hr /> -->
