@@ -2,11 +2,11 @@
   <div class="container-fluid p-0 fm-details-container">
     <div class="row g-0">
       <div class="col-lg-12 fm-details-content">
-        <app-header></app-header>
+        <!-- <app-header></app-header> -->
         <div class="fm-details" *ngIf="item$ | async as item">
-          <h2 class="fm-title">{{ item.heading }}</h2>
+          <!-- <h2 class="fm-title">{{ item.heading }}</h2>
           <p class="fm-subtitle pt-1">{{item.subheading}}</p>
-          <div class="fm-heading-divider"></div>
+          <div class="fm-heading-divider"></div> -->
           <div class="fm-body" *ngIf="index$ | async as index">
             <!-- insert elements here -->
             <div class="fm-body-content" *ngFor="let itemContent of item.pages; index as i">

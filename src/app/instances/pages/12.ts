@@ -22,13 +22,13 @@ export const page12: Page = {
               ]
             },
             {
-              metatype: "paragraph",
+              metatype: "h4",
               content: [
                 `Honourable Minister of State for Health and Social Welfare`
               ]
             },
             {
-              metatype: "paragraph",
+              metatype: "h4",
               content: [
                 `Federal Republic of Nigeria`
               ]

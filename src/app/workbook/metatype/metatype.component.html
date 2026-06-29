@@ -1,9 +1,41 @@
 <div class="fm-metatype fm-section-container mb-3" *ngIf="item.metatype === 'section'">
   <!-- <hr /> -->
-  <app-metatype *ngFor="let sectionItem of itemAsSectionItems()" [item]="sectionItem"
-  [workshopId]="workshopId" [chapter]="chapter" [index]="index" [offset]="offset"></app-metatype>
+  <app-metatype *ngFor="let sectionItem of itemAsSectionItems()" [item]="sectionItem" [workshopId]="workshopId"
+    [chapter]="chapter" [index]="index" [offset]="offset"></app-metatype>
   <p class="subheading color-accent w-100 text-center">{{ offset + index }}</p>
   <!-- <hr /> -->
+</div>
+<div class="fm-metatype fm-section-container fm-cover mb-3" *ngIf="item.metatype === 'cover'">
+  <!-- <hr /> -->
+  <div class="container-fluid p-0 fm-metatype" 
+  *ngIf="itemAsTables()[0] as banner">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center fm-image-group">
+          <img [src]="banner.content[0].content" alt="{{banner.content[1].content}}">
+        </div>
+        <div class="fm-caption-container" *ngIf="banner.content[1].content as caption"
+          [class.d-none]="caption.length === 0">
+          <app-metatype *ngFor="let c of caption" [item]="c"></app-metatype>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <p class="subheading color-accent w-100 text-center">{{ offset + index }}</p> -->
+  <!-- <hr /> -->
+</div>
+<div class="container-fluid p-0 fm-metatype fm-banner" *ngIf="item.metatype === 'banner'">
+  <div class="row">
+    <div class="offset-lg-1 col-lg-10">
+      <div class="text-center fm-image-group mb-3">
+        <img [src]="itemAsSectionItems()[0].content[0]" alt="{{itemAsSectionItems()[1].content[0]}}">
+      </div>
+      <div class="fm-caption-container text-center" *ngIf="itemAsSectionItems()[1].content as caption"
+        [class.d-none]="caption.length === 0">
+        <app-metatype *ngFor="let c of caption" [item]="c"></app-metatype>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="fm-metatype fm-paragraph-container" *ngIf="item.metatype === 'paragraph'">
   <p *ngFor="let text of itemAsStrings()" class="fm-body-text">
@@ -15,11 +47,10 @@
     <app-metatext [paragraph]="text"></app-metatext>
   </p> -->
   <ng-container *ngIf="response$ | async as response">
-    <textarea [name]="response.inputId" [id]="response.inputId" [ngModel]="response.answer" 
-    (ngModelChange)="response.answer= onTextChange($event)" class="w-100" rows="10"
-    (blur)="saveInput(response)"></textarea>
-    <button *ngIf="saving$ === null; else saving" class="small w-auto" 
-    (click)="saveInput(response)">Save</button>
+    <textarea [name]="response.inputId" [id]="response.inputId" [ngModel]="response.answer"
+      (ngModelChange)="response.answer= onTextChange($event)" class="w-100" rows="10"
+      (blur)="saveInput(response)"></textarea>
+    <button *ngIf="saving$ === null; else saving" class="small w-auto" (click)="saveInput(response)">Save</button>
     <ng-template #saving>
       <div *ngIf="saving$ | async as saved; else loading">
         <button class="icon w-auto small">
@@ -40,15 +71,16 @@
   </p>
 </div>
 <div class="fm-metatype fm-subheading-container" *ngIf="item.metatype === 'subheading'">
-  <h2 class="heading-small text-center fw-bold" *ngFor="let subheading of itemAsStrings()" id="{{getSubheadingId(subheading)}}">
+  <h2 class="heading-small text-center fw-bold" *ngFor="let subheading of itemAsStrings()"
+    id="{{getSubheadingId(subheading)}}">
     {{subheading}}
   </h2>
 </div>
 <div class="fm-metatype fm-h3-container" *ngIf="item.metatype === 'h3' || item.metatype === 'title'">
-  <p class="subheading fw-bold" *ngFor="let h3 of itemAsStrings()">{{h3}}</p>
+  <p class="fs-5 fw-bold" *ngFor="let h3 of itemAsStrings()">{{h3}}</p>
 </div>
 <div class="fm-metatype fm-h3-container" *ngIf="item.metatype === 'h4'">
-  <p class="subheading fw-bold" *ngFor="let h4 of itemAsStrings()">{{h4}}</p>
+  <p class="subheading opacity-75 fw-bold" *ngFor="let h4 of itemAsStrings()">{{h4}}</p>
 </div>
 <div class="fm-metatype fm-leading-container" *ngIf="item.metatype === 'leading'">
   <p class="fm-list-leading" *ngFor="let leading of itemAsStrings()">
@@ -62,8 +94,7 @@
     <div class="row justify-content-center">
       <div *ngFor="let img of imageItemAsStrings(0), index as i" class="col-lg-6 mb-3 fm-image-bg">
         <div class="text-center fm-image-group">
-          <img [src]="img"
-            alt="{{imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0]}}">
+          <img [src]="img" alt="{{imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0]}}">
           <div class="fm-caption-container">
             <p class="fm-caption">{{ imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0] }}
             </p>
@@ -92,20 +123,6 @@
             </a>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid p-0 fm-metatype fm-banner" *ngIf="item.metatype === 'banner'">
-  <div class="row">
-    <div class="offset-lg-1 col-lg-10">
-      <div class="text-center fm-image-group mb-3">
-        <img [src]="itemAsSectionItems()[0].content[0]"
-        alt="{{itemAsSectionItems()[1].content[0]}}">
-      </div>
-      <div class="fm-caption-container" *ngIf="itemAsSectionItems()[1].content as caption"
-      [class.d-none]="caption.length === 0">
-        <app-metatype *ngFor="let c of caption" [item]="c"></app-metatype>
       </div>
     </div>
   </div>
@@ -157,9 +174,11 @@
   </div>
   <!-- <hr /> -->
 </div>
-<div class="fm-metatype fm-table-container mb-5" *ngIf="item.metatype === 'table'">
+<div class="fm-metatype fm-table-container mb-5" 
+*ngIf="item.metatype === 'table' || item.metatype === 'borderless'">
   <!-- <hr /> -->
-  <table class="table table-striped table-bordered" *ngIf="itemAsTable() as item">
+  <table class="table" [class.table-borderless]="item.metatype === 'borderless'" 
+  *ngIf="itemAsTable() as item">
     <thead *ngIf="item.content[0].metatype === 'th'">
       <tr>
         <th *ngFor="let h of item.content[0].content" scope="col">{{ h }}</th>

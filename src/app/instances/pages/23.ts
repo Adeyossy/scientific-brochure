@@ -1,6 +1,6 @@
 import { Page } from "src/app/models/workbook";
 
-export const page10: Page = {
+export const page23: Page = {
   metatype: "section",
   content: [
     {
@@ -9,28 +9,22 @@ export const page10: Page = {
         {
           metatype: "src",
           content: [
-            `https://firebasestorage.googleapis.com/v0/b/scientific-brochure.firebasestorage.app/o/governor.seyi.makinde.jpg?alt=media&token=92edc2f7-c7b0-4833-9440-c4c0eb18b0dc`
+            `https://firebasestorage.googleapis.com/v0/b/scientific-brochure.firebasestorage.app/o/loc.chairman.dr.ogunbiyi.jpg?alt=media&token=0f0676d1-9854-4921-bb0c-2ec62a703a7b`
           ]
         },
         {
           metatype: "caption",
           content: [
             {
+              metatype: "h4",
+              content: [
+                `DR. J. O. OGUNBIYI`
+              ]
+            },
+            {
               metatype: "h3",
               content: [
-                `ENGINEER SEYI MAKINDE`
-              ]
-            },
-            {
-              metatype: "h4",
-              content: [
-                `His Excellency, The Executive Governor`
-              ]
-            },
-            {
-              metatype: "h4",
-              content: [
-                `Oyo State`
+                `LOC Chairman`
               ]
             }
           ]

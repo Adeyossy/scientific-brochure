@@ -31,16 +31,16 @@
 
 .fm-details {
   min-height: 100vh;
-  margin: 0px var(--spacing-default);
+  /* margin: 0px var(--spacing-default); */
   opacity: 0;
   /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.59)); */
   background-color: var(--background-colour-white);
   animation: transitionIn 200ms ease-in 50ms 1 forwards;
 }
-
+/* 
 .fm-body {
   margin-top: var(--spacing-default);
-}
+} */
 
 p.fm-body-text {
   margin-bottom: var(--spacing-default);

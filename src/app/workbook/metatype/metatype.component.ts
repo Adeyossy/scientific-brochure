@@ -49,6 +49,14 @@ export class MetatypeComponent implements OnInit {
     return this.item.content as unknown as string[];
   }
 
+  itemAsContent(): Content[] {
+    return this.item.content as Content[];
+  }
+
+  itemAsTables(): Table[] {
+    return this.item.content as Table[];
+  }
+
   itemAsSectionItems(): Section[] {
     return this.item.content as Section[];
   }

@@ -6,81 +6,73 @@ export const page29: Page = {
     {
       metatype: "subheading",
       content: [
-        `Opening Address by Dr. Benjamin SC Uzochukwu, Chairman, West African College of Physicians Nigeria Chapter and College Vice President at the 50th Annual General and Scientific Conference at the University of Ibadan International Conference Center, 5th - 11th July 2026.`
-      ]
-    },
-    {
-      metatype: "h4",
-      content: [
-        `Protocols`
-      ]
-    },
-    {
-      metatype: "list",
-      content: [
-        {
-          metatype: "leading",
-          content: [
-            ""
-          ]
-        },
-        {
-          metatype: "ul",
-          content: [
-            `The President of the West African College of Physicians`,
-            `Members of the Board of Trustees and National Officers Committee`,
-            `Our esteemed Founding Fellows and Elder Statesmen of the College`,
-            `Distinguished Fellows, and Members`,
-            `Invited Guests and Sponsors`,
-            `Ladies and Gentlemen`
-
-          ]
-        }
-      ]
-    },
-    {
-      metatype: "h3",
-      content: [
-        "Introduction"
+        `LOC Chairman's Welcome Remarks NOW ready: Dr John Olufemi Ogunbiyi Chairman 
+        LOC, 50th Nigeria Chapter WACP AGSM - Ibadan 2026`
       ]
     },
     {
       metatype: "paragraph",
       content: [
-        `Good morning and warm greetings to you all.`,
-        `It is with profound gratitude to Almighty God and a deep sense of honour that I 
-        stand before you today to welcome you to the 50th Annual General Scientific 
-        Meeting of the Nigeria Chapter of the West African College of Physicians. This 
-        is a landmark moment, not merely because we mark half a century of continuous 
-        scientific tradition, but because we gather in Ibadan, the very city where our 
-        journey began.`,
-        `Fifty years ago, a group of visionary physicians dared to dream. They imagined 
-        a West Africa where medical excellence would not be imported but grown, nurtured, 
-        and sustained by our own hands and minds. Today, that dream stands before you—resilient, 
-        evolving, and still irreplaceable.`,
+        `Distinguished colleagues, esteemed guests, Your Excellency, Your Imperial Majesty, 
+        ladies and gentlemen, I warmly welcome you to our Annual Scientific and General Meeting.
+        On behalf of the Local Organising Committee, I consider it a distinct honour to receive 
+        you as we gather around our central theme: “Building Bridges, Forging Resilience and 
+        Partnership in Health.”`
       ]
     },
     {
       metatype: "h3",
       content: [
-        "Remembering the Founding Fathers"
+        "State Executive Protocol"
       ]
     },
     {
       metatype: "paragraph",
       content: [
-        `We did not arrive here by accident. We stand on the shoulders of giants. Men and 
-        women, many now late and who sacrificed personal comfort, career advancement 
-        abroad, and sometimes their very health to build this chapter and college. They 
-        held meetings in modest rooms, wrote examination syllabi by hand, advocated for 
-        specialist training when no policy supported it, and mentored the first generation 
-        of Fellows with patience and rigour.`,
-        `We may not be able to name all of them today, but their legacy is written in every 
-        Fellow and member who practices evidence-based medicine in Nigeria. Their sacrifice 
-        is visible in every examination candidate we train, every policy we influence, and 
-        every patient who receives better care because a physician was college-trained.`,
-        `To the Founding Fathers, those with us and those who have gone to rest, we say 
-        thank you. We will not waste what you built.`
+        `We are highly honoured to welcome the Executive Governor of Oyo State, 
+        His Excellency, Engr. Oluseyi Makinde. State Leadership: Your presence 
+        reflects your administration’s steadfast commitment to transforming the 
+        health sector, upgrading state infrastructure, and prioritizing the well-being 
+        of the people of Oyo State.`,
+        `We are profoundly privileged by the physical presence of His Imperial Majesty,
+        the 44th Olubadan of Ibadanland, Oba Rashidi Adewolu Ladoja, ARUSHA 1. We welcome 
+        Kabiyesi to this ceremony, a monarch whose unique history as an elder statesman, 
+        former Senator, former Governor, and now traditional custodian perfectly bridges 
+        the worlds of governance and cultural heritage. The presence of the Olubadan 
+        reinforces the critical link between modern clinical excellence and traditional 
+        community leadership in promoting health across the land.`,
+        `I welcome our College President, members of the Executive Council, Chair and 
+        Members of the Chapter Board of Trustees, venerable elders, and distinguished 
+        fellows.`,
+        `A special welcome goes to our members and other resident doctors, as well as 
+        international guests who traveled far to join us in this ancient city of Ibadan.`,
+        `During this conference, we will explore how to harness accessible innovative 
+        digital technologies to revolutionize education, ensuring our doctors are 
+        future-ready.`,
+        `Our clinical and administrative discussions will focus on putting the patient 
+        first, cutting wait times, and streamlining care delivery. We also hope to address 
+        the economic realities of healthcare, looking at sustainable funding models to 
+        safeguard our institutions.`,
+        `This week features groundbreaking clinical research, evidence-based updates, 
+        and robust policy debates aligned with our core themes. We hope to engage 
+        actively in our plenary lectures, panel discussions, and specialized abstract 
+        presentations targeting healthcare sustainability. We also expect participants 
+        to use our dedicated networking slots to form the strategic alliances necessary 
+        to drive national health transformations.`,
+        `I wish to express my profound appreciation to the members of the Local Organising 
+        Committee, whose dedication, sacrifice, and tireless work over the past several months 
+        have brought us to this memorable day. Their commitment, resilience, and attention to 
+        detail have been evident in every aspect of this meeting. Please permit me to 
+        acknowledge them specially and to place on record our sincere gratitude for the time, 
+        energy, and devotion they have invested in making this event a reality. Their selection, 
+        I believe, was not accidental, but providential.`,
+        `The National Executive Committee was actively engaging with the LOC during the 
+        preparations for this celebratory conference, and I especially acknowledge their 
+        tenacity.`,
+        `We are deeply grateful to our pharmaceutical and medical technology sponsors, 
+        whose support reflects the spirit of partnership at the heart of this meeting. 
+        Their generosity has helped make this important conference possible, and their 
+        visible presence throughout our`
       ]
     }
   ]

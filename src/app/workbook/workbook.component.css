@@ -131,7 +131,7 @@ i {
 }
 
 @media only print {
-  .fm-toc-container {
+  .fm-toc-container, .fm-details-nav {
     display: none !important;
   }
 }

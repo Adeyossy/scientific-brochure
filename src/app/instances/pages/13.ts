@@ -1,6 +1,6 @@
 import { Page } from "src/app/models/workbook";
 
-export const page9: Page = {
+export const page13: Page = {
   metatype: "section",
   content: [
     {
@@ -9,7 +9,7 @@ export const page9: Page = {
         {
           metatype: "src",
           content: [
-            `https://firebasestorage.googleapis.com/v0/b/scientific-brochure.firebasestorage.app/o/president.bola.ahmed.tinubu.jpg?alt=media&token=32fa361d-c748-4339-aecd-a743297837b4`
+            `https://firebasestorage.googleapis.com/v0/b/scientific-brochure.firebasestorage.app/o/oba.rasheed.adewolu.ladoja.jpg?alt=media&token=d432bc2b-f1ed-4ef0-b908-129da51f92bd`
           ]
         },
         {
@@ -18,19 +18,13 @@ export const page9: Page = {
             {
               metatype: "h3",
               content: [
-                `BOLA AHMED TINUBU GCFR`
+                "OBA RASHEED ADEWOLU LADOJA"
               ]
             },
             {
               metatype: "h4",
               content: [
-                `President and Commander in Chief of the Armed Forces`
-              ]
-            },
-            {
-              metatype: "h4",
-              content: [
-                `Federal Republic of Nigeria`
+                "Olubadan of Ibadan Land."
               ]
             }
           ]

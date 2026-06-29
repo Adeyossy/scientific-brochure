@@ -16,13 +16,13 @@ export const page15: Page = {
           metatype: "caption",
           content: [
             {
-              metatype: "h4",
+              metatype: "h3",
               content: [
                 "Prof. Mamadou Mourtalla Ka"
               ]
             },
             {
-              metatype: "h3",
+              metatype: "h4",
               content: [
                 "The President, West African College of Physicians."
               ]
