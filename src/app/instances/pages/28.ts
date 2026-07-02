@@ -68,7 +68,7 @@ export const page28: Page = {
       ]
     },
     {
-      metatype: "h3",
+      metatype: "h4",
       content: [
         "West African College of Physicians"
       ]

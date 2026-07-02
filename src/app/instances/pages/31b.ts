@@ -11,10 +11,7 @@ export const page31b: Page = {
         medicine, between government and the private sector, and 
         between nations — will determine the health outcomes of our 
         communities tomorrow.`,
-        `I wish you all a most productive and memorable conference.
-        On behalf of the entire University of Ibadan community, I formally 
-        declare this 50th Annual General Meeting and Scientific 
-        Conference open.`,
+        `I wish you all a most productive and memorable conference.`,
         `Thank you, and God bless our collective efforts in building a 
         healthier West Africa.`
       ]

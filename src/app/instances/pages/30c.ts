@@ -49,7 +49,7 @@ export const page30c: Page = {
       ]
     },
     {
-      metatype: "paragraph",
+      metatype: "h4",
       content: [
         `Vice President, West African College of Physicians`
       ]

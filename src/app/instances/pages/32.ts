@@ -16,13 +16,13 @@ export const page32: Page = {
           metatype: "caption",
           content: [
             {
-              metatype: "h4",
+              metatype: "h3",
               content: [
                 `DR. OBIKE IGBEGBULAM`
               ]
             },
             {
-              metatype: "h3",
+              metatype: "h4",
               content: [
                 `Sir Samuel Manuwa Lecturer`
               ]

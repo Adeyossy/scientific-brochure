@@ -89,7 +89,8 @@ export const page26: Page = {
             `Dr Oladapo Aworanti`,
             `Dr Emmanuel Jite`,
             `Dr Adegboyega Ajibola`,
-            `Dr Doyin Osundina`
+            `Dr Doyin Osundina`,
+            `Dr Bunmi Fola-Bolumole`
           ]
         }
       ]

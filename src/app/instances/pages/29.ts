@@ -21,12 +21,6 @@ export const page29: Page = {
       ]
     },
     {
-      metatype: "h3",
-      content: [
-        "State Executive Protocol"
-      ]
-    },
-    {
       metatype: "paragraph",
       content: [
         `We are highly honoured to welcome the Executive Governor of Oyo State, 

@@ -28,7 +28,7 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "1998",
-                "Stress The Nigerian Context",
+                "Stress - The Nigerian Context",
                 "Dr. O. Famuyiwa",
                 "Lagos"
               ]
@@ -46,7 +46,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2000",
-                "Poverty and Health in Nigeria A challenge for Primary Health Care",
+                `Poverty and Health in Nigeria - A challenge for 
+                Primary Health Care`,
                 "Dr. E. A. Aderonke",
                 "Jos"
               ]
@@ -55,7 +56,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2001",
-                "Child health in a petroleum-based economy The Nigerian experience",
+                `Child health in a petroleum-based economy - 
+                The Nigerian experience`,
                 "Dr. T. C. Okeahialam",
                 "Asaba"
               ]
@@ -64,7 +66,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2002",
-                "Challenges of oncology practices in a poor economy Experience with lymphoma in Nigeria",
+                `Challenges of oncology practices in a poor economy 
+                - Experience with lymphoma in Nigeria`,
                 "Dr. M. A. Durosimi",
                 "Calabar"
               ]
@@ -73,7 +76,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2003",
-                "A dynamic appraisal of ethical consideration in medical practice in sub-Saharan Africa",
+                `A dynamic appraisal of ethical consideration in 
+                medical practice in sub-Saharan Africa`,
                 "Dr. E. T. Akpabio",
                 "Zaria"
               ]
@@ -95,8 +99,8 @@ export const page34: Page = {
           metatype: "th",
           content: [
             "2004",
-            "",
-            "Dr. A. O. Akinkugbe",
+            "Psychiatric Aspects of HIV/AIDS",
+            "Dr. Taiwo Adamson",
             "Ibadan"
           ]
         },
@@ -116,7 +120,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2006",
-                "Chronic non-communicable diseases: Rationalizing thera eutic and reventive measures",
+                `Chronic non-communicable diseases: Rationalizing 
+                therapeutic and preventive measures`,
                 "Dr. Lucas",
                 "Port Harcourt"
               ]
@@ -134,7 +139,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2008",
-                "Achieving the Millenium development goals — The role of the physicians",
+                `Achieving the Millenium development goals — 
+                The role of the physicians`,
                 "Dr. R. O. Oruamabo",
                 ""
               ]
@@ -152,7 +158,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2010",
-                "The growing burden of non-communicable diseases in Nigeria: Beyond rhetoric",
+                `The growing burden of non-communicable diseases 
+                in Nigeria: Beyond rhetoric`,
                 "Dr. ABO Omotosho",
                 "Ilorin"
               ]
@@ -170,7 +177,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2012",
-                "The medicine for poverty: An argument for health and development",
+                `The medicine for poverty: An argument for 
+                health and development`,
                 "Dr. Akin Osibogun",
                 "Uyo"
               ]
@@ -179,7 +187,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2013",
-                "Changes in Pathology practice: Their possible outcomes",
+                `Changes in Pathology practice: Their 
+                possible outcomes`,
                 "Dr. Femi Ogunbiyi",
                 "Oshogbo"
               ]
@@ -188,7 +197,7 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2014",
-                "Child  Poverty, Good Governance: What Outcome?",
+                `Child Poverty, Good Governance: What Outcome?`,
                 "Dr. O. O. Okolo",
                 "Sokoto"
               ]
@@ -197,7 +206,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2015",
-                "The family and emerging challenges of noncommunicable diseases in Nigeria",
+                `The family and emerging challenges of 
+                non-communicable diseases in Nigeria`,
                 "Dr. N. E. Udonwa",
                 "Owerri"
               ]
@@ -206,7 +216,7 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2016",
-                "Conflicts, idemics and national security",
+                "Conflicts, epidemics and national security",
                 "Dr. A. Ali Gombe",
                 "Gombe"
               ]
@@ -215,7 +225,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2017",
-                "Universal health access as a means to attain SDG 3: Philosophy of Justice",
+                `Universal health access as a means to attain 
+                SDG 3: Philosophy of Justice`,
                 "Dr. R. Uwakwe",
                 "Asaba"
               ]
@@ -224,7 +235,9 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2018",
-                "Rediscovering Purpose and Restoring Trust: Pathways for enhancing the performance of healthcare system in Nigeria",
+                `Rediscovering Purpose and Restoring Trust: 
+                Pathways for enhancing the performance of 
+                healthcare system in Nigeria`,
                 "Dr. Adesegun Fatusi",
                 "Kaduna"
               ]
@@ -233,8 +246,11 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2019",
-                "Healthcare governance, Health insurance and the hidden epidemic: Time to confront the scourge of STDs",
-                "Dr. Rasheed Ajani Bakare",
+                `Healthcare governance, Health insurance and the 
+                hidden epidemic: Time to confront the scourge 
+                of STDs`,
+                `Dr. Rasheed Ajani 
+                Bakare`,
                 "Abeokuta"
               ]
             },
@@ -242,7 +258,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2021",
-                "Nigeria's Health indices: Challenges and Prospects in a contemporary world",
+                `Nigeria's Health indices: Challenges and Prospects 
+                in a contemporary world`,
                 "Dr. Bede C. Ibe",
                 "Abuja"
               ]
@@ -251,8 +268,10 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2022",
-                "Building a Resilient Health System: Addressing the im act of emerging and re-emerging epidemics",
-                "Dr. Taiwo Lateef Sheikh",
+                `Building a Resilient Health System: Addressing the 
+                impact of emerging and re-emerging epidemics`,
+                `Dr. Taiwo Lateef 
+                Sheikh`,
                 "Enugu"
               ]
             },
@@ -260,7 +279,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2023",
-                "Prospects, Promise and Perils of ChatGPT in Health Care, Research and Education",
+                `Prospects, Promise and Perils of ChatGPT in 
+                Health Care, Research and Education`,
                 "Dr. Zubairu Iliyasu",
                 "Bauchi"
               ]
@@ -269,7 +289,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2024",
-                "One Health for Sustainable National Development: More than Just a Slogan",
+                `One Health for Sustainable National Development: 
+                More than Just a Slogan`,
                 "Dr. Musa Dankyau",
                 "Port Harcourt"
               ]
@@ -278,7 +299,8 @@ export const page34: Page = {
               metatype: "tr",
               content: [
                 "2025",
-                "Cardio-Kidney-Metabolic disease: what has lifestyle got to do with it?",
+                `Cardio-Kidney-Metabolic disease: what has 
+                lifestyle got to do with it?`,
                 "Dr Amam Mbakwem",
                 "Kano"
               ]

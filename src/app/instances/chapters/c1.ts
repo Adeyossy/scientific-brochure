@@ -30,6 +30,13 @@ import { page31b } from "../pages/31b";
 import { page32 } from "../pages/32";
 import { page33 } from "../pages/33";
 import { page34 } from "../pages/34";
+import { page21 } from "../pages/21";
+import { page22 } from "../pages/22";
+import { page5 } from "../pages/5";
+import { page6 } from "../pages/6";
+import { page36 } from "../pages/36";
+import { page37 } from "../pages/37";
+import { page4 } from "../pages/4";
 
 export const chapter1: Chapter = {
   heading: "Chapters",
@@ -38,6 +45,9 @@ export const chapter1: Chapter = {
   pages: [
     page1,
     page3,
+    page4,
+    page5,
+    page6,
     page7,
     page8,
     page9,
@@ -49,6 +59,8 @@ export const chapter1: Chapter = {
     page15,
     page16,
     page20,
+    page21,
+    page22,
     page23,
     page26,
     page27,
@@ -64,6 +76,8 @@ export const chapter1: Chapter = {
     page315,
     page32,
     page33,
-    page34
+    page34,
+    page36,
+    page37
   ]
 }

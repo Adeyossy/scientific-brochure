@@ -21,7 +21,7 @@ export const page31: Page = {
     {
       metatype: "h4",
       content: [
-        `5th – 11th July, 2026`
+        `5th - 11th July, 2026`
       ]
     },
     {
