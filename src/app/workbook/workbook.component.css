@@ -86,9 +86,9 @@ i {
   background-color: var(--fm-toc-background-color);
   position: fixed;
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
   bottom: 0; right: 0;
-  box-shadow: 0px -4px 3px 0px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0px -4px 3px 0px rgba(0, 0, 0, 0.05); */
 }
 
 .fm-details-nav i {
@@ -126,7 +126,8 @@ i {
 
 @media only screen and (min-width: 1200px) {
   .fm-details-nav {
-    width: 75%;
+    width: 70%;
+    right: 20px;
   }
 }
 

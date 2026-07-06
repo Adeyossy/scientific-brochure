@@ -1,17 +1,19 @@
-<div class="fm-metatype fm-section-container mb-3" *ngIf="item.metatype === 'section'">
-  <!-- <hr /> -->
-  <app-metatype *ngFor="let sectionItem of itemAsSectionItems()" [item]="sectionItem" [workshopId]="workshopId"
-    [chapter]="chapter" [index]="index" [offset]="offset"></app-metatype>
-  <p class="subheading color-accent w-100 text-center">{{ offset + index }}</p>
+<div class="fm-metatype fm-section-container mb-3 position-relative" 
+*ngIf="item.metatype === 'section'">
+  <app-metatype *ngFor="let sectionItem of itemAsSectionItems()" 
+  [item]="sectionItem" [workshopId]="workshopId"
+  [chapter]="chapter" [index]="index" [offset]="offset">
+  </app-metatype>
+  <p class="subheading color-accent w-100 text-center page-number">{{ offset + index }}</p>
   <!-- <hr /> -->
 </div>
 <div class="fm-metatype fm-section-container fm-cover mb-3" *ngIf="item.metatype === 'cover'">
   <!-- <hr /> -->
   <div class="container-fluid p-0 fm-metatype" 
   *ngIf="itemAsTables()[0] as banner">
-    <div class="row">
+    <div class="row g-0">
       <div class="col-12">
-        <div class="text-center fm-image-group">
+        <div class="text-center">
           <img [src]="banner.content[0].content" alt="{{banner.content[1].content}}">
         </div>
         <div class="fm-caption-container" *ngIf="banner.content[1].content as caption"
@@ -71,22 +73,23 @@
   </p>
 </div>
 <div class="fm-metatype fm-subheading-container" *ngIf="item.metatype === 'subheading'">
-  <h2 class="heading-small text-center fw-bold" *ngFor="let subheading of itemAsStrings()"
-    id="{{getSubheadingId(subheading)}}">
+  <h2 class="subheading text-center fw-bold" *ngFor="let subheading of itemAsStrings()"
+  id="{{getSubheadingId(subheading)}}">
     {{subheading}}
   </h2>
 </div>
 <div class="fm-metatype fm-h3-container" *ngIf="item.metatype === 'h3' || item.metatype === 'title'">
   <p class="fs-5 fw-bold" *ngFor="let h3 of itemAsStrings()">{{h3}}</p>
 </div>
-<div class="fm-metatype fm-h3-container" *ngIf="item.metatype === 'h4'">
-  <p class="subheading opacity-75 fw-bold" *ngFor="let h4 of itemAsStrings()">{{h4}}</p>
+<div class="fm-metatype fm-h3-container mb-0 pb-0" *ngIf="item.metatype === 'h4'">
+  <p class="fs-6 opacity-75 fw-bold mb-0 pb-0" *ngFor="let h4 of itemAsStrings()">{{h4}}</p>
 </div>
 <div class="fm-metatype fm-leading-container" *ngIf="item.metatype === 'leading'">
   <p class="fm-list-leading" *ngFor="let leading of itemAsStrings()">
     <app-metatext [paragraph]="leading"></app-metatext>
   </p>
 </div>
+<div class="fm-metatype fm-break py-5" *ngIf="item.metatype === 'break'"></div>
 <div class="fm-metatype fm-image-container" *ngIf="item.metatype === 'image'"
   [ngStyle]='{ "background": "url({{ `../..${imageItemAsStrings(0)[0]}` }})" }'>
   <!-- {{imageItemAsStrings(0)[0]}} -->
@@ -95,10 +98,10 @@
       <div *ngFor="let img of imageItemAsStrings(0), index as i" class="col-lg-6 mb-3 fm-image-bg">
         <div class="text-center fm-image-group">
           <img [src]="img" alt="{{imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0]}}">
-          <div class="fm-caption-container">
-            <p class="fm-caption">{{ imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0] }}
-            </p>
-          </div>
+        </div>
+        <div class="fm-caption-containe">
+          <p class="fm-caption">{{ imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0] }}
+          </p>
         </div>
       </div>
     </div>
@@ -147,11 +150,13 @@
   </a>
 </div>
 <ul class="fm-metatype fm-list-items-container" *ngIf="item.metatype === 'ul'">
-  <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()"><app-metatext [paragraph]="listItem"></app-metatext>
+  <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()">
+    <app-metatext [paragraph]="listItem"></app-metatext>
   </li>
 </ul>
 <ol class="fm-metatype fm-list-items-container" *ngIf="item.metatype === 'ol'">
-  <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()"><app-metatext [paragraph]="listItem"></app-metatext>
+  <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()">
+    <app-metatext [paragraph]="listItem"></app-metatext>
   </li>
 </ol>
 <div class="fm-metatype fm-list-container" *ngIf="item.metatype === 'list'">
@@ -187,7 +192,12 @@
     <tbody>
       <tr *ngFor="let tr of item.content[1].content as row; index as i; first as f">
         <!-- <th *ngIf="f" scope="row">{{ row }}</th> -->
-        <td *ngFor="let r of tr.content">{{ r }}</td>
+        <ng-container *ngFor="let r of tr.content">
+          <td *ngIf="r.split('|') as r_s"
+          [attr.colspan]="r_s[1] || 1">
+            {{ r_s[0] }}
+          </td>
+        </ng-container>
       </tr>
     </tbody>
   </table>

@@ -4,7 +4,7 @@
   --primary-colour-contrast: #0F0529;
   --primary-colour-light: rgb(235, 241, 255);
   --accent-colour: #ff69b4;
-  --accent-colour-correct:rgb(25, 216, 0);
+  --accent-colour-correct: rgb(25, 216, 0);
   --accent-colour-green: #ffe600;
   --accent-colour-orange: #ff7300;
   --accent-colour-red: #e60000;
@@ -30,16 +30,16 @@
   --spacing-default: 24px;
   --spacing-small: 24px;
   --spacing-nav: 74px;
-  --three-colours: linear-gradient(to right, var(--accent-colour-red) 0%, 
-                                          var(--accent-colour-red) 33.33%, 
-                                          var(--accent-colour-orange) 33.33%,
-                                          var(--accent-colour-orange) 66.66%, 
-                                          var(--accent-colour-green) 66.67%);
+  --three-colours: linear-gradient(to right, var(--accent-colour-red) 0%,
+      var(--accent-colour-red) 33.33%,
+      var(--accent-colour-orange) 33.33%,
+      var(--accent-colour-orange) 66.66%,
+      var(--accent-colour-green) 66.67%);
   --font-big: 48px;
   --font-medium: 32px;
   --font-small: 21px;
   --font-subheading: 18px;
-  --font-text: 16px;
+  --font-text: 12px;
   --font-text-small: 12px;
 }
 
@@ -61,7 +61,8 @@ header {
   width: 100%;
   position: fixed;
   z-index: 3;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
 }
 
 .main {
@@ -90,7 +91,13 @@ nav {
   padding-bottom: var(--spacing-large);
 }
 
-h1, h2, h3, h4, h5, h6, .heading {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
   font-family: 'ITC Avant Garde Pro Md', Arial, Helvetica, sans-serif;
   color: var(--text-colour);
   margin: 0px;
@@ -118,7 +125,8 @@ h1.heading-avantgarde {
   font-size: var(--font-small);
 }
 
-.heading-primary, .text-primary {
+.heading-primary,
+.text-primary {
   color: var(--primary-colour);
 }
 
@@ -138,7 +146,11 @@ h1.heading-avantgarde {
   padding: var(--spacing-default);
 }
 
-p, label, input, li, summary {
+p,
+label,
+input,
+li,
+summary {
   color: var(--text-colour);
   font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
   font-size: var(--font-text);
@@ -148,7 +160,8 @@ p, label, input, li, summary {
   color: var(--text-colour);
 }
 
-p, li {
+p,
+li {
   line-height: 1.3;
   letter-spacing: -0.3px;
 }
@@ -194,7 +207,10 @@ label {
   margin-bottom: 6px;
 }
 
-input, .label-as-input, select, textarea {
+input,
+.label-as-input,
+select,
+textarea {
   width: 100%;
   display: block;
   padding: 16px 24px;
@@ -205,16 +221,20 @@ input, .label-as-input, select, textarea {
   transition: border 200ms ease-in;
 }
 
-input:hover, .label-as-input:hover, select:hover {
+input:hover,
+.label-as-input:hover,
+select:hover {
   border-color: var(--accent-colour);
 }
 
-input:valid, select:valid {
+input:valid,
+select:valid {
   border-color: var(--primary-colour);
   border-left: 4px solid var(--accent-colour-correct);
 }
 
-input:invalid, select:invalid {
+input:invalid,
+select:invalid {
   border-left: 4px solid var(--accent-colour-red);
 }
 
@@ -268,14 +288,15 @@ a.link-card {
   color: var(--accent-colour);
 }
 
-i.fitted, span.fitted {
+i.fitted,
+span.fitted {
   display: inline-block;
   width: var(--font-text-small);
   height: var(--font-text-small);
   line-height: var(--font-text-small);
 }
 
-label > i.bi {
+label>i.bi {
   color: var(--primary-colour);
   /* text-shadow: 1px 1px var(--primary-colour); */
 }
@@ -303,11 +324,12 @@ button.small {
   font-weight: 400;
 }
 
-label.icon, button.icon {
+label.icon,
+button.icon {
   cursor: pointer;
   width: auto;
   height: auto;
-  padding: 8px var(--font-text) ;
+  padding: 8px var(--font-text);
   border: none;
   border-radius: var(--border-radius);
   background-color: var(--light-grey);
@@ -331,6 +353,7 @@ button:active {
   z-index: 2;
   top: 0;
 }
+
 .overlay-visible {
   height: 100vh;
   overflow-y: hidden;
@@ -370,7 +393,7 @@ button:active {
   box-shadow: 2px 4px black;
 }
 
-.underline.subheading ~ h1.subheading {
+.underline.subheading~h1.subheading {
   line-height: 0;
 }
 
@@ -713,27 +736,37 @@ p.fm-subtitle {
     --font-big: 60px;
     --font-medium: 48px;
     --font-small: 28px;
-    --font-text: 18px;
+    --font-text: 16px;
   }
-  
-.two-lines {
-  line-height: 2rem;
-  height: 4rem;
+
+  .two-lines {
+    line-height: 2rem;
+    height: 4rem;
+  }
+
+  .three-lines {
+    line-height: 2rem;
+    height: 6rem;
+  }
+
+  .four-lines {
+    line-height: 2rem;
+    height: 8rem;
+  }
+
+  .five-lines {
+    line-height: 1.5rem;
+    height: 7.5rem;
+  }
 }
 
-.three-lines {
-  line-height: 2rem;
-  height: 6rem;
-}
-
-.four-lines {
-  line-height: 2rem;
-  height: 8rem;
-}
-
-.five-lines {
-  line-height: 1.5rem;
-  height: 7.5rem;
-}
-
+@media print {
+  :root {
+    --font-big: 48px;
+    --font-medium: 32px;
+    --font-small: 21px;
+    --font-subheading: 18px;
+    --font-text: 12pt;
+    --font-text-small: 12px;
+  }
 }

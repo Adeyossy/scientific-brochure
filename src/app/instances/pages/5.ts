@@ -1,7 +1,7 @@
 import { Page } from "src/app/models/workbook";
 
 export const page5: Page = {
-  metatype: "cover",
+  metatype: "section",
   content: [
     {
       metatype: "banner",

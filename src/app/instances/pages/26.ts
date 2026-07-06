@@ -118,7 +118,7 @@ export const page26: Page = {
             `Dr Aderonke A Dedeke (FWACS)`,
             `Dr Ifeoluwa Adetula`,
             `Dr O O Sholeye`,
-            `Dr O A Afolabi`,
+            // `Dr O A Afolabi`,
             `Dr O I Majekodunmi (FWACS)`
           ]
         }
