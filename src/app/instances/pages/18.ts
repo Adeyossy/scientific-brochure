@@ -24,7 +24,7 @@ export const page18: Page = {
             {
               metatype: "h4",
               content: [
-                `WACP College Vice President (Nigeria)`
+                `WACP National Chairman/College Vice President (Nigeria)`
               ]
             }
           ]
