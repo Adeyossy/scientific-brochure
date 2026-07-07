@@ -46,6 +46,17 @@ import { page94 } from "../pages/94";
 import { page17 } from "../pages/17";
 import { page19 } from "../pages/19";
 import { page25 } from "../pages/25";
+import { page50a } from "../pages/50a";
+import { page50b } from "../pages/50b";
+import { page50c } from "../pages/50c";
+import { page50d } from "../pages/50d";
+import { page50e } from "../pages/50e";
+import { page50f } from "../pages/50f";
+import { page50g } from "../pages/50g";
+import { page50h } from "../pages/50h";
+import { page50i } from "../pages/50i";
+import { page37a } from "../pages/37a";
+import { page37b } from "../pages/37b";
 
 export const chapter1: Chapter = {
   heading: "Chapters",
@@ -92,7 +103,18 @@ export const chapter1: Chapter = {
     page36,
     page37,
     page38,
+    page37a,
+    page37b,
     page50,
+    page50a,
+    page50b,
+    page50c,
+    page50d,
+    page50e,
+    page50f,
+    page50g,
+    page50h,
+    page50i,
     page91,
     page92,
     page94

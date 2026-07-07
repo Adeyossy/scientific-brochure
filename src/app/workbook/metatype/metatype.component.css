@@ -32,6 +32,11 @@ p.fm-body-text, ol, ul {
   overflow-x: auto;
 }
 
+.multi-colspan {
+  text-align: center;
+  font-weight: 700;
+}
+
 .table-borderless td, .table-borderless th {
   padding-top: 2px;
   padding-bottom: 2px;

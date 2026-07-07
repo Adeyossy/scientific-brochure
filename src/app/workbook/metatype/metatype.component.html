@@ -99,8 +99,8 @@
         <div class="text-center fm-image-group">
           <img [src]="img" alt="{{imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0]}}">
         </div>
-        <div class="fm-caption-containe">
-          <p class="fm-caption">{{ imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0] }}
+        <div class="fm-caption-container mt-3">
+          <p class="fm-caption fs-6 fw-bold">{{ imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0] }}
           </p>
         </div>
       </div>
@@ -193,9 +193,14 @@
       <tr *ngFor="let tr of item.content[1].content as row; index as i; first as f">
         <!-- <th *ngIf="f" scope="row">{{ row }}</th> -->
         <ng-container *ngFor="let r of tr.content">
-          <td *ngIf="r.split('|') as r_s"
+          <!-- <td *ngIf="r.split('|') as r_s"
           [attr.colspan]="r_s[1] || 1">
             {{ r_s[0] }}
+          </td> -->
+          <td *ngIf="r.charAt(r.length - 2) as l"
+          [attr.colspan]="l === '|' ? r.charAt(r.length - 1) : 1"
+          [class.multi-colspan]="l === '|'">
+            {{ l === '|' ? r.slice(0, r.length - 2) : r }}
           </td>
         </ng-container>
       </tr>
