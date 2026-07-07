@@ -142,7 +142,39 @@ export const page20: Page = {
                 "DR. MUSA DANKYAU",
                 "NIGERIA"
               ]
-            }
+            },
+            {
+              metatype: "tr",
+              content: [
+                "SECRETARY GENERAL",
+                "DR. MUSA DANKYAU",
+                "NIGERIA"
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                "ASST SEC. GENERAL",
+                "DR. HABIBU A. GALADANCI",
+                "NIGERIA"
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                "COLLEGE TREASURER",
+                "DR. B. OTAIGBE",
+                "NIGERIA"
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                "ASST COL. TREASURER",
+                "DR. AWA O. D. ABRAHAMS",
+                "GHANA"
+              ]
+            },
           ]
         }
       ]

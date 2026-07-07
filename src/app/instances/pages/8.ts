@@ -63,12 +63,14 @@ export const page8: Page = {
       content: [
         `The first Fellowship examinations were held in October 1979. Currently, the 
         examinations are held in Ibadan, Enugu, Zaria, Accra, Monrovia, Freetown, and 
-        Banjul. The Fellowship certificates of the College are recognized in the participating 
-        countries and guaranteed by the signatories of the WAHO. The candidates earn the 
-        Membership certificate the Fellowship certificate (FWACP). The College has an 
-        Endowment Fund which was launched in member countries to provide financial support 
-        to maintain the College Programme of training postgraduate candidates and updating.`,
-        `Fellows by Continuous Medical Education. Contributions to this fund are welcomed.`
+        Banjul.`,
+        `The Fellowship certificates of the College are recognized in the participating 
+        countries and guaranteed by the signatories of the WAHO. The candidates can earn the 
+        Membership certificate and the Fellowship certificate (FWACP).`,
+        `The College has an Endowment Fund which was launched in member countries 
+        to provide financial support to maintain the College Programme of training 
+        postgraduate candidates and updating.`,
+        `Fellows may be earned by progression through stipulations contained in the College website.`
       ]
     }
   ]
