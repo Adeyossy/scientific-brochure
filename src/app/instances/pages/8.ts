@@ -70,7 +70,7 @@ export const page8: Page = {
         `The College has an Endowment Fund which was launched in member countries 
         to provide financial support to maintain the College Programme of training 
         postgraduate candidates and updating.`,
-        `Fellows may be earned by progression through stipulations contained in the College website.`
+        `Fellowship may be earned by progression through stipulations contained in the College website.`
       ]
     }
   ]
