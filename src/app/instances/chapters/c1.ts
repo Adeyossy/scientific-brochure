@@ -77,7 +77,6 @@ export const chapter1: Chapter = {
     page27,
     page28,
     page29,
-    page29a,
     page30,
     page30a,
     page30b,
