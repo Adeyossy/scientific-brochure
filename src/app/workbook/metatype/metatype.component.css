@@ -1,7 +1,4 @@
 .fm-section-container {
-  width: 21cm;
-  height: 29.7cm;
-  overflow: auto;
   background: url('/assets/images/background.no.texture.lighter.jpg');
   /* background-blend-mode: soft-light; */
   background-size: cover;
