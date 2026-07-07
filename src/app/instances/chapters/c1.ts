@@ -45,6 +45,7 @@ import { page18 } from "../pages/18";
 import { page94 } from "../pages/94";
 import { page17 } from "../pages/17";
 import { page19 } from "../pages/19";
+import { page25 } from "../pages/25";
 
 export const chapter1: Chapter = {
   heading: "Chapters",
@@ -73,6 +74,7 @@ export const chapter1: Chapter = {
     page21,
     page22,
     page23,
+    page25,
     page26,
     page27,
     page28,

@@ -203,12 +203,12 @@
   </table>
 </div>
 <div class="fm-metatype fm-avatar-container" *ngIf="item.metatype === 'avatar'">
-  <img src="../..{{item.content[0]}}" alt="{{item.content[1]}}" class="img-fluid">
+  <img src="{{item.content[0]}}" alt="{{item.content[1]}}" class="img-fluid">
   <div class="fm-metatype fm-avatar-details">
     <h3 class="fm-header fm-avatar-header">{{item.content[1]}}</h3>
     <div class="fm-heading-divider"></div>
-    <a href="tel:+234{{item.content[2]}}" class="fm-avatar-details-phonenumber d-block">{{item.content[2]}}</a>
-    <a href="mailto:{{item.content[3]}}" class="fm-avatar-details-email d-block">{{item.content[3]}}</a>
+    <p class="small-text">{{item.content[2]}}</p>
+    <p class="small-text">{{item.content[3]}}</p>
   </div>
 </div>
 <div class="fm-metatype fm-avatars-container" *ngIf="item.metatype === 'avatars'">
