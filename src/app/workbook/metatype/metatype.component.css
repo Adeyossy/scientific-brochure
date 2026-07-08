@@ -181,3 +181,8 @@ img {
 a {
   word-wrap: break-word;
 }
+
+iframe {
+  width: 100%;
+  height: 33vmax;
+}
