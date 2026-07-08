@@ -62,6 +62,10 @@ import { page49schema } from "../pages/49schema";
 import { page37c } from "../pages/37c";
 import { page37d } from "../pages/37d";
 import { page37e } from "../pages/37e";
+import { page50cad } from "../pages/50cad";
+import { page50cschema } from "../pages/50cschema";
+import { page50ischema } from "../pages/50ischema";
+import { page48ad } from "../pages/48ad";
 
 export const chapter1: Chapter = {
   heading: "Chapters",
@@ -113,18 +117,22 @@ export const chapter1: Chapter = {
     page37c,
     page37d,
     page37e,
+    page48ad,
     page49ad,
     page49schema,
     page50,
     page50a,
     page50b,
     page50c,
+    page50cad,
+    page50cschema,
     page50d,
     page50e,
     page50f,
     page50g,
     page50h,
     page50i,
+    page50ischema,
     page91,
     page92,
     page94
