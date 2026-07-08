@@ -77,3 +77,7 @@ summary.active .fm-toc-item-number {
 .fm-animate-dropdown-reverse::before {
   animation: dropdownReverse 200ms linear forwards;
 }
+
+.toc-subheadings {
+  background-color: var(--primary-colour-light);
+}

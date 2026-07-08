@@ -33,7 +33,8 @@ export const page101: Page = {
             "CMD, University College Hospital, Ibadan",
             "Iwosan Healthcare Systems Limited",
             "Mega Life Sciences",
-            "Sanofi Pharmaceuticals"
+            "Sanofi Pharmaceuticals",
+            "APIN Public Health Initiatives"
           ]
         }
       ]
