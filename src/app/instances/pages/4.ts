@@ -26,140 +26,189 @@ export const page4: Page = {
               metatype: "tr",
               content: [
                 `National Anthem`,
-                `5`
+                `4`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `College Anthem`,
-                `6`
+                `5`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `Symbols and Traditions of the College`,
-                `7`
+                `6`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `About the College`,
-                `8`
+                `7`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `President and Commander-in-Chief FRN`,
-                `9`
+                `8`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `The Executive Governor, Kano State`,
-                `10`
+                `9`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `The Coordinating Minister of Health and Social Welfare`,
-                `11`
+                `10`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `The Honourable Minister of State for Health and Social Welfare`,
-                `12`
+                `11`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `The Olubadan of Ibadan`,
-                `13`
+                `12`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `The VC, UI & CMD, UCH, Ibadan`,
-                `14`
+                `13`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `The College President`,
-                `15`
+                `14`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `Chairman, Board of Trustees (BOT)`,
-                `16`
+                `15`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `Members of BOT`,
-                `17`
+                `16`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `Chairman WACP Nigeria Chapter`,
-                `18`
+                `17`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `Members of NOC`,
-                `19`
+                `18`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `List of College Officers`,
-                `20`
+                `19`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `List of Chapter Officers`,
-                `21`
+                `20`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `List of Past Nigeria Chapter Officers`,
-                `22`
+                `21`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `Chairman LOC`,
-                `24`
+                `22`
               ]
             },
             {
               metatype: "tr",
               content: [
                 `LOC and Sub-committee Chairman`,
+                `23`
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                `List of Sub-committee members`,
                 `24`
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                `Address of the President, WACP`,
+                `26`
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                `Welcome Address by the LOC Chairman`,
+                `27`
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                `Address by the National Chairman, WACP Nig. Chapter`,
+                `28`
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                `Goodwill Messages`,
+                `30`
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                `Sir Samuel Manuwa Lecturer`,
+                `35`
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                `Citation of Sir Samuel Manuwa Lecturer`,
+                `36`
               ]
             },
           ]

@@ -88,7 +88,7 @@ export const page43: Page = {
                 by the Special Guest of Honour`,
                 `His Excellency, The Executive
                 Governor of Oyo State Engr.
-                Seyi Makinde`
+                Oluseyi Makinde`
               ]
             },
             {
@@ -96,7 +96,7 @@ export const page43: Page = {
               content: [
                 `11.40-11.45 am`,
                 `Citation of Sir Samuel Manuwa Lecturer`,
-                `Chairman Faculty of Laboratory Medicine, Dr Babatunde Olasode`
+                `National Secretary, Laboratory Medicine, Dr Mohammed Umar`
               ]
             },
             {
