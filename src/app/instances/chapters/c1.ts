@@ -66,6 +66,7 @@ import { page50cad } from "../pages/50cad";
 import { page50cschema } from "../pages/50cschema";
 import { page50ischema } from "../pages/50ischema";
 import { page48ad } from "../pages/48ad";
+import { page101 } from "../pages/101";
 
 export const chapter1: Chapter = {
   heading: "Chapters",
@@ -135,6 +136,7 @@ export const chapter1: Chapter = {
     page50ischema,
     page91,
     page92,
-    page94
+    page94,
+    page101
   ]
 }
