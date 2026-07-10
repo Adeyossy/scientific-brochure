@@ -71,6 +71,7 @@ import { page37f } from "../pages/37f";
 import { page37g } from "../pages/37g";
 import { page42 } from "../pages/42";
 import { page43 } from "../pages/43";
+import { page50ga } from "../pages/50ga";
 
 export const chapter1: Chapter = {
   heading: "Chapters",
@@ -139,6 +140,7 @@ export const chapter1: Chapter = {
     page50e,
     page50f,
     page50g,
+    page50ga,
     page50h,
     page50i,
     page50ischema,
