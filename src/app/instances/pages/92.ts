@@ -210,6 +210,55 @@ export const page92: Page = {
                 "Dr. Babawaru Goni",
                 "Dr. Etete Peters"
               ]
+            },
+            {
+              "metatype": "tr",
+              "content": [
+                "Dr Muhammad Sani Isa",
+                "Dr Ambrose Isah"
+              ]
+            },
+            {
+              "metatype": "tr",
+              "content": [
+                "Dr Veronica Josephs",
+                "Dr Solomon Kadiri"
+              ]
+            },
+            {
+              "metatype": "tr",
+              "content": [
+                "Dr Kamilu Karaye",
+                "Dr Nnamdi Ken-Uba"
+              ]
+            },
+            {
+              "metatype": "tr",
+              "content": [
+                "Dr Kazeem Salami",
+                "Dr Mahmoud Sani"
+              ]
+            },
+            {
+              "metatype": "tr",
+              "content": [
+                "Dr Balarabe Sani Garko",
+                "Dr Emmanuel Sanya"
+              ]
+            },
+            {
+              "metatype": "tr",
+              "content": [
+                "Dr Peter Ugbodaga",
+                "Dr Ifeoma Ulasi"
+              ]
+            },
+            {
+              "metatype": "tr",
+              "content": [
+                "Dr Chioma Unachukwu",
+                "Dr Evelyn Unuigbe"
+              ]
             }
           ]
         }
